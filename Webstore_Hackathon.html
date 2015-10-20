@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
+
+    <meta charset="utf-8">
+    <title>Webstore Hackathon</title>
+    <style>
+          body {
+            background-color: #D0CEDE;
+            font: 24px 'Raleway';
+            /*DOTTED BACKGROUND*/
+            padding: 1.25em 1.6875em;
+            background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+            background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+            background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+            background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+            -webkit-background-size: 3px 3px;
+            -moz-background-size: 3px 3px;
+            background-size: 3px 3px;
+          }
+
+          #container {
+            width: 960px;
+            margin: 0 auto;
+            border: 1px solid gray;
+            padding: 15px;
+            background-color: #F7F4F3;
+          }
+
+          h1, h2, h3, h4 {
+            text-align: center;
+          }
+
+          ol ul li {
+            list-style-type: none;
+          }
+
+          .footer {
+            border-top: 2px solid gray;
+            background-color: #2B2D2E;
+            list-style-type: none;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 8px 10px 8px;
+          }
+
+          .footer ul li {
+            display: inline;
+            font-weight: 1.25em;
+            font-size: 18px;
+            padding-right: 15px;
+            margin: 15px;
+          }
+
+          .footer a {
+            color: #fff;
+            font: bold;
+            text-decoration: none;
+          }
+
+          hr.separate {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+          }
+
+          #navbar {
+            padding-top: 10px;
+          }
+
+          #webstoreH ul li {
+            list-style-type: none;
+            position: relative;
+            top: 50%;
+            padding: 12px;
+            font: 14px;
+            padding-right: 20px;
+            font-size: 0.8em;
+          }
+
+          #webstoreH a {
+            text-decoration: none;
+            font: bold;
+          }
+
+          .navbar-text {
+            margin-right: 25px;
+            margin-top: -35px;
+            position: relative;
+            font-size: 0.7em;
+          }
+
+          label {
+            font-weight: 200;
+          }
+
+  </style>
+  </head>
+  <body>
+    <div id="container">
+
+      <!-- <h1>Day 15 - Webstore Hackathon</h1> -->
+
+      <div id="header">
+
+      </div>
+
+
+      <!--Navbar-->
+      <div id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarHH" aria-expanded="false">
+                          <span class="sr-only">Toggle Navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+
+                      <a class="navbar-brand" href="HH.html" onClick="window.location.reload()">Webstore Hackathon</a>
+                  </div>
+
+                  <div class="collapse navbar-collapse" id="webstoreH">
+                        <ul class="navbar navbar-nav">
+                            <!-- <li class="active"><a href="#">Carousel <span class="sr-only">(current)</span></a></li> -->
+                            <li><a href="HH.html">Books</a></li>
+                            <li><a href="Carousel.html">Blu-Ray</a></li>
+                            <li><a href="videosHH.html">Games</a></li>
+                            <li><a href="mapsHH.html">TVs</a></li>
+                            <li><a href="mathHH.html"></a></li>
+                        </ul>
+                  </div>
+                </div>
+
+                <p class="navbar-text navbar-right" id="author">by <a href="https://itunes.apple.com/us/app/gamography/id994514518?mt=8" blank="" class="navbar-link">Arun</a></p>
+            </nav>
+      </div><!--END Navbar-->
+
+      <hr class="separate">
+
+      <div id="content">
+
+        <div id="book1"></div>
+        <div id="book1"></div>
+
+      </div>
+
+      <div class="footer">
+          <ul>
+            <li><a href="#" class="hvr-pulse">About</a></li>
+            <li><a href="#" class="hvr-pulse">Contact</a></li>
+            <li><a href="#" class="hvr-pulse">Facebook</a></li>
+            <li><a href="#" class="hvr-pulse">Twitter</a></li>
+          </ul>
+      </div>
+
+    </div><!--END Container-->
+
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+
+      //book1
+      var book1 = {
+          name: 'Being Different',
+          price: '$23.96',
+          picture: 'http://www.harpercollins.co.in/Book_CoverImage/2845_Resize_being-different-low-res.jpg',
+          selling_points: ['intriguing', 'philosophical', 'popular', 'current events']
+      };
+
+      var book2 = {
+          name: 'Harry Potter',
+          price: '$49.95',
+          picture: 'http://img.neoseeker.com/mgv/293602/602/49/usa269x400harrypottercover_display.jpg',
+          selling_points: ['wildly popular', 'fiction', 'action-adventure', 'children\'s books']
+      };
+
+    </script>
+
+  </body>
+</html>
